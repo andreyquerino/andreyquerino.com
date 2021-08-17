@@ -1,5 +1,5 @@
 # 💀
 http://andreyquerino.com <br />
-Meu mini site
+Meu site pessoal
 
 Copyright (c) 2021 Andrey Querino
