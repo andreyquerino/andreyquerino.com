@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Andrey Querino</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I design and code things on the web." />
+  <meta property="og:site_name" content="andreyquerino.com" />
+  <meta property="og:title" content="Andrey Querino" />
+  <meta property="og:description" content="I design and code things on the web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://andreyquerino.com" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+</head>
+<body>
+  <div class="messages"></div>
+  <audio src="https://github.com/andreyquerino/andreyquerino.com/blob/main/music/War-Pigs-Black-Sabbath.mp3?raw=true" muted="muted" autoplay="autoplay"></audio>
+  <div class="controls">
+    <button class="controls__btn controls__btn--toggled" id="btn-audio" title="Play it with audio!">
+      <svg viewBox="0 0 24 24">
+        <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"></path>
+      </svg>
+      <svg viewBox="0 0 24 24">
+        <path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z"></path>
+      </svg>
+    </button>
+  </div>
+  <script id="rendered-js" >
+    const audio = document.querySelector('audio');
+    const btnAudio = document.querySelector('#btn-audio');
+    btnAudio.addEventListener('click', () => {
+    const elClass = 'controls__btn--toggled';
+    btnAudio.classList.remove(elClass);
+    audio.muted = !audio.muted;
+    if (audio.muted) {
+        btnAudio.classList.add(elClass);
+    }
+    });
+</script>
+  <script src="js/anime.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS7X747R0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SS7X747R0G');
+  </script>
+</body>
+</html>
