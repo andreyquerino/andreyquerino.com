@@ -14,10 +14,9 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #1a314f;
+  background: #08172d;
 }
 .messages {
-  overflow: auto;
   width: 100vw;
   max-height: 100vh;
   padding: 1rem .9rem;
@@ -38,7 +37,7 @@ body {
   border-bottom-left-radius: 0;
 }
 .bubble.left {
-  background: rgba(206, 206, 206, 0.16);
+  background: rgb(206 206 206 / 18%);
 }
 .bubble:after {
   content: "";
@@ -74,52 +73,15 @@ body {
   display: inline-block;
   color: rgba(0, 0, 0, 0.57);
 }
-
-.controls {
-  display: flex;
+i {
+  font-size: 50px;
+  color: #ffffff59;
+  line-height: 50px;
+  padding: 13px;
+}
+.musica {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 10;
-}
-.controls__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem;
-  padding: 1.4rem;
-  border: none;
-  border-radius: 4rem;
-  background: #83888a82;
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  will-change: transform;
-  color: white;
-  overflow: hidden;
-  cursor: pointer;
-  outline: none;
-}
-.controls__btn svg {
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 1rem;
-  width: 1rem;
-  position: absolute;
-}
-.controls__btn svg:nth-child(2) {
-  transform: translateY(2rem);
-}
-.controls__btn svg path {
-  fill: white;
-}
-.controls__btn--toggled svg:nth-child(1) {
-  transform: translateY(-2rem);
-}
-.controls__btn--toggled svg:nth-child(2) {
-  transform: translateY(0rem);
-}
-.controls__btn:hover {
-  transform: scale(1.1);
-}
-
-audio {
-  display: none;
+  padding: 20px;
 }

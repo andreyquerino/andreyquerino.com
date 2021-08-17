@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <title>Andrey Querino</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I design and code things on the web." />
+  <meta property="og:site_name" content="andreyquerino.com" />
+  <meta property="og:title" content="Andrey Querino" />
+  <meta property="og:description" content="I design and code things on the web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://andreyquerino.com" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://andreyquerino.com/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://andreyquerino.com/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://andreyquerino.com/img/favicon-16x16.png">
+  <link rel="manifest" href="https://andreyquerino.com/img/site.webmanifest">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/8ac36d620e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="messages"></div>
+  <div class="musica">
+    <a id="podcast-play" onclick="playShow()"><i class="fas fa-play-circle"></i></a>
+    <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="fas fa-pause-circle"></i></a>
+  </div>
+<audio id="podcast-audio"><source src="https://andreyquerino.com/music/War-Pigs-Black-Sabbath.mp3" type="audio/mp3"></audio>
+  <script src="js/anime.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SS7X747R0G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SS7X747R0G');
+  </script>
+</body>
+</html>

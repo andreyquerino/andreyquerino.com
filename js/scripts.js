@@ -20,7 +20,7 @@ window.onload = function() {
     'Saudações humano 🖖',
     'eu sou Andrey',
     'Eu programo e codifico coisas',
-    'No momento, estou aceitando trabalho freelance. <br> Você pode entrar em contato comigo em <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>',
+    'No momento, estou aceitando trabalho freelance. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>',
     '<a target="_blank" href="https://github.com/andreyquerino">github.com/andreyquerino</a>',
     getCurrentTime(),
     '🤘 A.'
@@ -167,3 +167,16 @@ window.onload = function() {
   sendMessages();
 
 }
+var podcastAudio = document.getElementById('podcast-audio');
+var playBtn = document.getElementById('podcast-play');
+var pauseBtn = document.getElementById('podcast-pause');
+var playShow = function () {
+  podcastAudio.play();
+  playBtn.style.display = "none";
+  pauseBtn.style.display = "inline-block";
+};
+var pauseShow = function () {
+  podcastAudio.pause();
+  playBtn.style.display = "inline-block";
+  pauseBtn.style.display = "none";
+};
