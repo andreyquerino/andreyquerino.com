@@ -17,10 +17,10 @@
 </head>
 <body>
   <div class="user-bar">
-    <a title="Voltar uma página" onclick="location.href = document.referrer;"><div class="back"><i class="fas fa-arrow-left"></i></div></a>
+    <a title="Voltar uma página" onclick="window.close();"><div class="back"><i class="fas fa-arrow-left"></i></div></a>
     <div class="avatar"><img src="img/avatar.jpg" alt="Avatar"></div>
     <div class="name"><span>Andrey</span><span class="status">online</span></div>
-    <div class="actions more" onclick="window.close()"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="actions more" onclick="window.close();"><i class="fas fa-ellipsis-v"></i></div>
   </div>
   <div class="messages"></div>
   <script src="js/anime.js"></script>
