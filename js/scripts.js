@@ -5,25 +5,32 @@ window.onload = function() {
   var loadingText = '<b>•</b><b>•</b><b>•</b>';
   var messageIndex = 0;
 
+	const zeroFill = n => {
+		return ('0' + n).slice(-2);
+	} 
+	const now = new Date();
+	const dataHora = zeroFill(now.getHours()) + ":" + zeroFill(now.getMinutes());
+  const tempo = '<div id="data-hora">'+dataHora+'</div>';
+
   var getCurrentTime = function() {
     var date = new Date();
     var hours =  date.getHours();
     var minutes =  date.getMinutes();
     var current = hours + (minutes * .01);
-    if (current >= 5 && current < 12) return 'Tenha um bom dia';
-    if (current >= 12 && current < 19) return 'Tenha uma boa tarde';
-    if (current >= 19 || current < 24) return 'Tenha uma boa noite';
-    if (current >= 24 || current < 5) return 'Vai dormi 😒';
+    if (current >= 5 && current < 12) return 'Tenha um bom dia'+tempo;
+    if (current >= 12 && current < 19) return 'Tenha uma boa tarde'+tempo;
+    if (current >= 19 || current < 24) return 'Tenha uma boa noite'+tempo;
+    if (current >= 24 || current < 5) return 'Vai dormi 😒'+tempo;
   }
 
   var messages = [
-    'Saudações humano 🖖',
-    'eu sou Andrey',
-    'sou programador e analista de sistemas',
-    'No momento, estou aceitando trabalho freelance. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>',
-    '<a target="_blank" href="https://github.com/andreyquerino">github.com/andreyquerino</a>',
+    'Saudações humano 🖖'+tempo,
+    'eu sou Andrey'+tempo,
+    'sou programador e analista de sistemas'+tempo,
+    'No momento, estou aceitando trabalho freelancer. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
+    '<a target="_blank" href="https://github.com/andreyquerino">github.com/andreyquerino</a>'+tempo,
     getCurrentTime(),
-    '🤘 A.'
+    '🤘 A.'+tempo
   ]
 
   var getFontSize = function() {
@@ -165,18 +172,5 @@ window.onload = function() {
   }
 
   sendMessages();
-
 }
-var podcastAudio = document.getElementById('podcast-audio');
-var playBtn = document.getElementById('podcast-play');
-var pauseBtn = document.getElementById('podcast-pause');
-var playShow = function () {
-  podcastAudio.play();
-  playBtn.style.display = "none";
-  pauseBtn.style.display = "inline-block";
-};
-var pauseShow = function () {
-  podcastAudio.pause();
-  playBtn.style.display = "inline-block";
-  pauseBtn.style.display = "none";
-};
+

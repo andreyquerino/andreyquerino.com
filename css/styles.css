@@ -1,7 +1,7 @@
 :root { font-size: 1.125rem; }
-@media (min-width: 600px) { :root { font-size: 1.5rem; } }
-@media (min-width: 900px) { :root { font-size: 1.75rem; } }
-@media (min-width: 1200px) { :root { font-size: 2rem; } }
+@media (min-width: 600px) { :root { font-size: 1.1rem; } }
+@media (min-width: 900px) { :root { font-size: 1.3rem; } }
+@media (min-width: 1200px) { :root { font-size: 1.5rem; } }
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ body {
 .messages {
   width: 100vw;
   max-height: 100vh;
-  padding: 1rem .9rem;
+  padding: 0.5rem .9rem;
   color: #fff;
 }
 .bubble {
@@ -77,11 +77,77 @@ i {
   font-size: 50px;
   color: #ffffff59;
   line-height: 50px;
-  padding: 13px;
+  padding: 0.6rem 0.5rem;
 }
-.musica {
+#musica {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 20px;
+}
+.user-bar {
+  width: 100%;
+  height: 2.5rem;
+  background: rgb(206 206 206 / 18%);
+  color: #fff;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  position: relative;
+}
+.user-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.user-bar div {
+  float: left;
+  position: relative;
+}
+
+.user-bar .actions {
+  float: right;
+  margin: 0 0 0 20px;
+}
+
+.user-bar .actions.more {
+  margin: 0 0.3rem;
+}
+
+.user-bar .avatar {
+  margin: 0.25rem 0;
+  width: 2rem;
+}
+
+.user-bar .avatar img {
+  border-radius: 50%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: block;
+  width: 100%;
+}
+
+.user-bar .name {
+  font-weight: 600;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  margin: 0.25rem 0.5rem;
+}
+
+.user-bar .status {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.back i {
+  font-size: 1rem;
+}
+.actions.more i{
+  font-size: 1rem;
+}
+#data-hora{
+    color: #ffffff45;
+    font-size: 0.6rem;
 }
