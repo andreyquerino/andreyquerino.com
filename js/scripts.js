@@ -19,7 +19,7 @@ window.onload = function() {
   var messages = [
     'Saudações humano 🖖',
     'eu sou Andrey',
-    'Eu programo e codifico coisas',
+    'sou programador e analista de sistemas',
     'No momento, estou aceitando trabalho freelance. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>',
     '<a target="_blank" href="https://github.com/andreyquerino">github.com/andreyquerino</a>',
     getCurrentTime(),
