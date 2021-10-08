@@ -19,8 +19,8 @@ window.onload = function() {
     var current = hours + (minutes * .01);
     if (current >= 5 && current < 12) return 'Tenha um bom dia'+tempo;
     if (current >= 12 && current < 19) return 'Tenha uma boa tarde'+tempo;
-    if (current >= 19 || current < 3) return 'Tenha uma boa noite'+tempo;
-    if (current >= 3 || current < 5) return 'Vai dormi 😒'+tempo;
+    if (current >= 19 || current < 23) return 'Tenha uma boa noite'+tempo;
+    if (current >= 23 || current < 5) return 'Durma bem 😴'+tempo;
   }
 
   var messages = [
