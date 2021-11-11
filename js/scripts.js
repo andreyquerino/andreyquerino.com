@@ -27,8 +27,8 @@ window.onload = function() {
     'Saudações humano 🖖'+tempo,
     'eu sou Andrey'+tempo,
     'sou programador e analista de sistemas'+tempo,
-    'No momento, estou aceitando trabalho freelancer. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
-    '<a target="_blank" href="https://github.com/andreyquerino">github.com/andreyquerino</a>'+tempo,
+    'no momento, estou aceitando trabalho freelancer. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
+    '<a href="https://github.com/andreyquerino">github.com/andreyquerino</a>'+tempo,
     getCurrentTime(),
     '🤘 A.'+tempo
   ]
