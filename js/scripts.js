@@ -28,7 +28,7 @@ window.onload = function() {
     'eu sou Andrey'+tempo,
     'sou programador e analista de sistemas'+tempo,
     'no momento, estou aceitando trabalho freelancer. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
-    '<a href="https://github.com/andreyquerino">github.com/andreyquerino</a>'+tempo,
+    '<a href="https://github.com/andreyquerino">github.com/andreyquerino</a><br><a href="https://linkedin.com/in/andreyquerino/">linkedin.com/in/andreyquerino</a><br><a href="https://twitter.com/andreyquerino">twitter.com/andreyquerino</a><br><a href="https://instagram.com/andreyquerino">instagram.com/andreyquerino</a><br><a href="https://facebook.com/andreyquerino">facebook.com/andreyquerino</a>'+tempo,
     getCurrentTime(),
     '🤘 A.'+tempo
   ]
