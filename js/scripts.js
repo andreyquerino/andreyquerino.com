@@ -1,3 +1,9 @@
+/*
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
+ * Copyright (c) 2016 Julian Garnier
+ */
+
 window.onload = function() {
 
   var messagesEl = document.querySelector('.messages');
@@ -27,7 +33,7 @@ window.onload = function() {
     'Saudações humano 🖖'+tempo,
     'eu sou Andrey'+tempo,
     'sou programador e analista de sistemas'+tempo,
-    'no momento, estou aceitando trabalho freelancer. <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
+    'no momento, estou aceitando trabalho freelancer.<br>você pode entrar em contato comigo em <a href="mailto:contato@andreyquerino.com">contato@andreyquerino.com</a>'+tempo,
     '<a href="https://github.com/andreyquerino">github.com/andreyquerino</a><br><a href="https://linkedin.com/in/andreyquerino/">linkedin.com/in/andreyquerino</a><br><a href="https://twitter.com/andreyquerino">twitter.com/andreyquerino</a><br><a href="https://instagram.com/andreyquerino">instagram.com/andreyquerino</a><br><a href="https://facebook.com/andreyquerino">facebook.com/andreyquerino</a>'+tempo,
     getCurrentTime(),
     '🤘 A.'+tempo
